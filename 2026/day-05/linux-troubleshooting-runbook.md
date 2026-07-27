@@ -6,28 +6,28 @@ A problem occurs --> Check service health --> Check CPU --> Check Memory --> Che
 1. I first decide a servise to do troubleshooting, for this i ran
 `systemctl list-units --type=service --state=running`
 
-![alt text](t1.jpg)
+![service list](images/t1.jpg)
 
 2. I selected docker.service
 
 3. to check status - `systemctl status docker` 
 
-![alt text](t2.jpg)
+![docker status](images/t2.jpg)
 
 4. for CPU and memory - `ps -p 418 -o pid,%cpu,%mem,cmd` 
 where 418 = PID of docker 
 
-![alt text](t3.jpg)
+![CPU Memory](images/t3.jpg)
 
 5. to check disk space - for filesystem usage - `df -h` 
 for docker disk space - `docker system df`
 
-![alt text](t4.jpg)
+![disk](images/t4.jpg)
 
 6. to check logs- `journalctl -u docker -n 5`
 here i see the latest 5 entries thats why its -n 5
 
-![alt text](t5.jpg)
+![logs](images/t5.jpg)
 
 
 *****  "df -h tells me whether the underlying filesystem has enough free space. If the host disk is full, Docker may fail to pull images, write container data, or create logs. For Docker's own storage consumption, I'd use docker system df."
