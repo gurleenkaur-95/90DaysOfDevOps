@@ -64,3 +64,8 @@ If n — prints "Skipped."
 ![alt text](<images/day16 task5 code.png>)
 ![alt text](<images/day16 task5.png>)
 
+
+  
+**Note : Here screenshots are added with no exclusive permissions (like chmod 764) but it is always best practice to give only user execute permissions, not to groups and others** 
+  
+  
