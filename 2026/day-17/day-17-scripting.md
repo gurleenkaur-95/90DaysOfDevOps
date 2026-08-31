@@ -5,19 +5,23 @@
 1. Create for_loop.sh that:
 - Loops through a list of 5 fruits and prints each one
 
-Code: 
+Code:
+
 ![alt text](<images/day17 task1 -1 code.png>)
 
 Output:
+
 ![alt text](<images/day17 task1 -1.png>)
 
 2. Create count.sh that:
 - Prints numbers 1 to 10 using a for loop
 
 Code:
+
 ![alt text](<images/day17 task1 -2 code.png>)
 
 Output:
+
 ![alt text](<images/day17 task1 -2 .png>)
 
 --------------------------------------------
@@ -30,9 +34,11 @@ Output:
 - Prints "Done!" at the end
 
 Code:
+
 ![alt text](<images/day17 task2 code.png>)
 
 Output:
+
 ![alt text](<images/day17 task2.png>)
 
 --------------------------------------------
@@ -44,10 +50,12 @@ Output:
 - Prints Hello, <name>!
 - If no argument is passed, prints "Usage: ./greet.sh "
 
-Code: 
+Code:
+
 ![alt text](<images/day17 task3 -1 code.png>)
 
-Output:
+Output: 
+
 ![alt text](<images/day17 task3 -1.png>)
 
 2. Create args_demo.sh that:
@@ -56,9 +64,11 @@ Output:
 - Prints the script name ($0)
 
 Code:
+
 ![alt text](<images/day17 task3 -2 code.png>)
 
 Output:
+
 ![alt text](<images/day17 task3 -2.png>)
 
 --------------------------------------------
@@ -73,9 +83,11 @@ Output:
 - Prints status for each package
 
 Code:
+
 ![alt text](<images/day17 task4 code.png>)
 
 Output:
+
 ![alt text](<images/day17 task4.png>)
 
 --------------------------------------------
@@ -90,18 +102,22 @@ Output:
 - Uses || operator to print an error if any step fails
 
 Code:
+
 ![alt text](<images/day17 task5 -1 code.png>)
 
 Output:
+
 ![alt text](<images/day17 task5 -1.png>)
 
 
 2. Modify your install_packages.sh to check if the script is being run as root — exit with a message if not
 
 Code:
+
 ![alt text](<images/day17 task5 -2 code.png>)
 
 Output:
+
 ![alt text](<images/day17 task5 -2.png>) 
 
 --------------------------------------------
@@ -114,13 +130,13 @@ Output:
 - **PowerShell / Windows Terminal**: Mainly used to run Windows commands and start/manage WSL. It is different from Linux shells. but we can run ubuntu here by `wsl -d ubuntu` then `cd~` and we will be in linux environment.
 - **EC2 Ubuntu**: A real remote Linux server in AWS, useful for practicing server-related tasks like systemctl, journalctl, Nginx, and troubleshooting.
 - **/mnt/c/... in WSL**: This means I am working with files stored on the Windows C: drive, so some Linux features like chmod may behave differently.
-- **/home/lenovo in WSL**: This is the Linux filesystem, where Linux permissions and commands work more naturally.
+- **/home/lenovo in WSL**: This is the Linux filesystem, where Linux permissions and commands work more naturally.  
 
 2. Difference between these operators
 - **||** → run the next command if the previous command fails.
-- **&&** → run the next command if the previous command succeeds.
+- **&&** → run the next command if the previous command succeeds.  
 
-3. Some commands that i learned-
+3. Some new commands that i learned-
 - **Error handling**
 `set -e` → stops the script when a command fails.
 `exit 1` → exits with an error status.
